@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F1DDE8B1F101C5A0092B186 /* SpeakerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1DDE8A1F101C5A0092B186 /* SpeakerViewCell.swift */; };
+		0F1DDE8D1F1021A30092B186 /* ViewSpeakerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1DDE8C1F1021A30092B186 /* ViewSpeakerController.swift */; };
+		0F1DDE951F1038410092B186 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1DDE941F1038410092B186 /* MenuController.swift */; };
+		0F1DDE971F132BA60092B186 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1DDE961F132BA60092B186 /* MapController.swift */; };
+		0F1DDE9A1F146ABD0092B186 /* TwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1DDE991F146ABD0092B186 /* TwitterTimelineController.swift */; };
+		0F2B7D171F1875720052A035 /* speakerBios.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B7D161F1875720052A035 /* speakerBios.json */; };
+		0F2B7D191F1879310052A035 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B7D181F1879310052A035 /* FileLoader.swift */; };
+		0F2B7D1B1F1AB9CC0052A035 /* PanelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B7D1A1F1AB9CC0052A035 /* PanelTableViewCell.swift */; };
+		0F2B7D1D1F1ABE550052A035 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B7D1C1F1ABE550052A035 /* AboutController.swift */; };
+		0F2B7D1F1F1C13390052A035 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B7D1E1F1C13390052A035 /* ScheduleController.swift */; };
+		0F2B7D211F1C18CC0052A035 /* ScheduleDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B7D201F1C18CC0052A035 /* ScheduleDayController.swift */; };
+		0F2B7D651F1C57F90052A035 /* ViewTalkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B7D641F1C57F90052A035 /* ViewTalkController.swift */; };
+		0F2E3E501F5BA39B00B5B194 /* 2017-EvolutionBrochure.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0F2E3E4F1F5BA39B00B5B194 /* 2017-EvolutionBrochure.pdf */; };
+		0F2E3E561F5CE08C00B5B194 /* TabSwitcherDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E3E551F5CE08C00B5B194 /* TabSwitcherDelegate.swift */; };
+		0F2E3E581F5DF64F00B5B194 /* Favoritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E3E571F5DF64F00B5B194 /* Favoritable.swift */; };
+		0F2E3E5A1F5E01DC00B5B194 /* MHEFUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E3E591F5E01DC00B5B194 /* MHEFUserDefaults.swift */; };
+		0F2E3E5E1F5FA57100B5B194 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E3E5D1F5FA57100B5B194 /* AppUtility.swift */; };
+		0F2E3E601F5FB3E500B5B194 /* ConferenceRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E3E5F1F5FB3E500B5B194 /* ConferenceRoom.swift */; };
+		0F785AB01F5B61CF0050F2EB /* ParkingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F785AAF1F5B61CF0050F2EB /* ParkingInfoViewController.swift */; };
+		0F785AB21F5B679F0050F2EB /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F785AB11F5B679F0050F2EB /* FavoritesViewController.swift */; };
+		0F7CA5E91F231431001EEFBC /* ConferenceTalkTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA5E81F231431001EEFBC /* ConferenceTalkTableCell.swift */; };
+		0F7CA5EB1F243B9E001EEFBC /* TalkSpeakerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA5EA1F243B9E001EEFBC /* TalkSpeakerTableCell.swift */; };
+		0F7CA5ED1F246C6D001EEFBC /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CA5EC1F246C6D001EEFBC /* CustomTabBarController.swift */; };
+		0F96BDAE1F0066CA004B7DE1 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F96BDAD1F0066CA004B7DE1 /* Speaker.swift */; };
+		0F96BDB01F006A79004B7DE1 /* TalkCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F96BDAF1F006A79004B7DE1 /* TalkCategory.swift */; };
+		0F96BDB31F0768F2004B7DE1 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F96BDB21F0768F2004B7DE1 /* StringExt.swift */; };
+		0F96BDB51F09A000004B7DE1 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F96BDB41F09A000004B7DE1 /* RoundButton.swift */; };
+		0F96BDB71F09AD48004B7DE1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F96BDB61F09AD48004B7DE1 /* WebViewController.swift */; };
+		0FAC0D631EFF380700D0B582 /* ConferenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAC0D621EFF380700D0B582 /* ConferenceController.swift */; };
+		0FAC0D651EFF388700D0B582 /* StartUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAC0D641EFF388700D0B582 /* StartUpController.swift */; };
+		0FBF74921F0FF1E900824831 /* ViewAllSpeakersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF74911F0FF1E900824831 /* ViewAllSpeakersController.swift */; };
+		0FC830E51F5651B300E60A24 /* ServerErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC830E41F5651B300E60A24 /* ServerErrorController.swift */; };
+		0FC830E71F56627000E60A24 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC830E61F56627000E60A24 /* ImageButton.swift */; };
+		469A0595D055FF9985DAB8B4 /* Pods_MHEF_Conference.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7185155C01B4F69FED3A3BDC /* Pods_MHEF_Conference.framework */; };
+		84A3235B1EC5269700E22DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3235A1EC5269700E22DAA /* AppDelegate.swift */; };
+		84A323601EC5269700E22DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A3235E1EC5269700E22DAA /* Main.storyboard */; };
+		84A323621EC5269700E22DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A323611EC5269700E22DAA /* Assets.xcassets */; };
+		84A323651EC5269700E22DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A323631EC5269700E22DAA /* LaunchScreen.storyboard */; };
+		84A3236E1ECA2DC400E22DAA /* DBWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3236D1ECA2DC400E22DAA /* DBWorker.swift */; };
+		84A323701ECA2DDB00E22DAA /* DBWorkerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3236F1ECA2DDB00E22DAA /* DBWorkerDelegate.swift */; };
+		84A323721ECA2F1900E22DAA /* ConferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A323711ECA2F1900E22DAA /* ConferenceType.swift */; };
+		84A323741ECA2FE400E22DAA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A323731ECA2FE400E22DAA /* AppConfig.swift */; };
+		84A323771ECA4D1600E22DAA /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A323761ECA4D1600E22DAA /* Conference.swift */; };
+		84A323791ECA4D7D00E22DAA /* ConferenceTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A323781ECA4D7D00E22DAA /* ConferenceTalk.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F1DDE8A1F101C5A0092B186 /* SpeakerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewCell.swift; sourceTree = "<group>"; };
+		0F1DDE8C1F1021A30092B186 /* ViewSpeakerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSpeakerController.swift; sourceTree = "<group>"; };
+		0F1DDE8E1F1029D60092B186 /* MHEF-Conference-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHEF-Conference-Bridging-Header.h"; sourceTree = "<group>"; };
+		0F1DDE941F1038410092B186 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		0F1DDE961F132BA60092B186 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		0F1DDE991F146ABD0092B186 /* TwitterTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTimelineController.swift; sourceTree = "<group>"; };
+		0F2B7D161F1875720052A035 /* speakerBios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speakerBios.json; sourceTree = "<group>"; };
+		0F2B7D181F1879310052A035 /* FileLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		0F2B7D1A1F1AB9CC0052A035 /* PanelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelTableViewCell.swift; sourceTree = "<group>"; };
+		0F2B7D1C1F1ABE550052A035 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		0F2B7D1E1F1C13390052A035 /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		0F2B7D201F1C18CC0052A035 /* ScheduleDayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleDayController.swift; sourceTree = "<group>"; };
+		0F2B7D641F1C57F90052A035 /* ViewTalkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTalkController.swift; sourceTree = "<group>"; };
+		0F2E3E4F1F5BA39B00B5B194 /* 2017-EvolutionBrochure.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-EvolutionBrochure.pdf"; sourceTree = "<group>"; };
+		0F2E3E551F5CE08C00B5B194 /* TabSwitcherDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabSwitcherDelegate.swift; sourceTree = "<group>"; };
+		0F2E3E571F5DF64F00B5B194 /* Favoritable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favoritable.swift; sourceTree = "<group>"; };
+		0F2E3E591F5E01DC00B5B194 /* MHEFUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHEFUserDefaults.swift; sourceTree = "<group>"; };
+		0F2E3E5D1F5FA57100B5B194 /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		0F2E3E5F1F5FB3E500B5B194 /* ConferenceRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceRoom.swift; sourceTree = "<group>"; };
+		0F785AAF1F5B61CF0050F2EB /* ParkingInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingInfoViewController.swift; sourceTree = "<group>"; };
+		0F785AB11F5B679F0050F2EB /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		0F7CA5E81F231431001EEFBC /* ConferenceTalkTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceTalkTableCell.swift; sourceTree = "<group>"; };
+		0F7CA5EA1F243B9E001EEFBC /* TalkSpeakerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkSpeakerTableCell.swift; sourceTree = "<group>"; };
+		0F7CA5EC1F246C6D001EEFBC /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		0F96BDAD1F0066CA004B7DE1 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		0F96BDAF1F006A79004B7DE1 /* TalkCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkCategory.swift; sourceTree = "<group>"; };
+		0F96BDB21F0768F2004B7DE1 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		0F96BDB41F09A000004B7DE1 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		0F96BDB61F09AD48004B7DE1 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		0FAC0D621EFF380700D0B582 /* ConferenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceController.swift; sourceTree = "<group>"; };
+		0FAC0D641EFF388700D0B582 /* StartUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartUpController.swift; sourceTree = "<group>"; };
+		0FBF74911F0FF1E900824831 /* ViewAllSpeakersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllSpeakersController.swift; sourceTree = "<group>"; };
+		0FC830E41F5651B300E60A24 /* ServerErrorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerErrorController.swift; sourceTree = "<group>"; };
+		0FC830E61F56627000E60A24 /* ImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		1EAE59B7DE297FFDF9BF290F /* Pods-MHEF-Conference.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHEF-Conference.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHEF-Conference/Pods-MHEF-Conference.release.xcconfig"; sourceTree = "<group>"; };
+		7185155C01B4F69FED3A3BDC /* Pods_MHEF_Conference.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHEF_Conference.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A323571EC5269700E22DAA /* MHEF-Conference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MHEF-Conference.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3235A1EC5269700E22DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84A3235F1EC5269700E22DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A323611EC5269700E22DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84A323641EC5269700E22DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84A323661EC5269700E22DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A3236D1ECA2DC400E22DAA /* DBWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBWorker.swift; sourceTree = "<group>"; };
+		84A3236F1ECA2DDB00E22DAA /* DBWorkerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBWorkerDelegate.swift; sourceTree = "<group>"; };
+		84A323711ECA2F1900E22DAA /* ConferenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceType.swift; sourceTree = "<group>"; };
+		84A323731ECA2FE400E22DAA /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		84A323761ECA4D1600E22DAA /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
+		84A323781ECA4D7D00E22DAA /* ConferenceTalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceTalk.swift; sourceTree = "<group>"; };
+		9DD0B10754B4A2E15155AD92 /* Pods-MHEF-Conference.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHEF-Conference.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHEF-Conference/Pods-MHEF-Conference.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A323541EC5269700E22DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469A0595D055FF9985DAB8B4 /* Pods_MHEF_Conference.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F96BDB11F0768DF004B7DE1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F96BDB21F0768F2004B7DE1 /* StringExt.swift */,
+				0F96BDB41F09A000004B7DE1 /* RoundButton.swift */,
+				0F1DDE8A1F101C5A0092B186 /* SpeakerViewCell.swift */,
+				0F1DDE8E1F1029D60092B186 /* MHEF-Conference-Bridging-Header.h */,
+				0F2B7D181F1879310052A035 /* FileLoader.swift */,
+				0F2B7D1A1F1AB9CC0052A035 /* PanelTableViewCell.swift */,
+				0F7CA5E81F231431001EEFBC /* ConferenceTalkTableCell.swift */,
+				0F7CA5EA1F243B9E001EEFBC /* TalkSpeakerTableCell.swift */,
+				0FC830E61F56627000E60A24 /* ImageButton.swift */,
+				0F2E3E551F5CE08C00B5B194 /* TabSwitcherDelegate.swift */,
+				0F2E3E571F5DF64F00B5B194 /* Favoritable.swift */,
+				0F2E3E591F5E01DC00B5B194 /* MHEFUserDefaults.swift */,
+				0F2E3E5D1F5FA57100B5B194 /* AppUtility.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		0FAC0D611EFF368900D0B582 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FAC0D621EFF380700D0B582 /* ConferenceController.swift */,
+				0FAC0D641EFF388700D0B582 /* StartUpController.swift */,
+				0F96BDB61F09AD48004B7DE1 /* WebViewController.swift */,
+				0FBF74911F0FF1E900824831 /* ViewAllSpeakersController.swift */,
+				0F1DDE8C1F1021A30092B186 /* ViewSpeakerController.swift */,
+				0F1DDE941F1038410092B186 /* MenuController.swift */,
+				0F1DDE961F132BA60092B186 /* MapController.swift */,
+				0F1DDE991F146ABD0092B186 /* TwitterTimelineController.swift */,
+				0F2B7D1C1F1ABE550052A035 /* AboutController.swift */,
+				0F2B7D1E1F1C13390052A035 /* ScheduleController.swift */,
+				0F2B7D201F1C18CC0052A035 /* ScheduleDayController.swift */,
+				0F2B7D641F1C57F90052A035 /* ViewTalkController.swift */,
+				0F7CA5EC1F246C6D001EEFBC /* CustomTabBarController.swift */,
+				0FC830E41F5651B300E60A24 /* ServerErrorController.swift */,
+				0F785AAF1F5B61CF0050F2EB /* ParkingInfoViewController.swift */,
+				0F785AB11F5B679F0050F2EB /* FavoritesViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84A3234E1EC5269700E22DAA = {
+			isa = PBXGroup;
+			children = (
+				84A323591EC5269700E22DAA /* MHEF-Conference */,
+				84A323581EC5269700E22DAA /* Products */,
+				CEE1BDF12F4813728E980FEB /* Pods */,
+				F9BD0BD65A8FB11D95A100F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84A323581EC5269700E22DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A323571EC5269700E22DAA /* MHEF-Conference.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A323591EC5269700E22DAA /* MHEF-Conference */ = {
+			isa = PBXGroup;
+			children = (
+				0F96BDB11F0768DF004B7DE1 /* Helpers */,
+				0FAC0D611EFF368900D0B582 /* Controller */,
+				84A323751ECA4D0600E22DAA /* Conference */,
+				84A3235A1EC5269700E22DAA /* AppDelegate.swift */,
+				84A3235E1EC5269700E22DAA /* Main.storyboard */,
+				84A323611EC5269700E22DAA /* Assets.xcassets */,
+				84A323631EC5269700E22DAA /* LaunchScreen.storyboard */,
+				84A323661EC5269700E22DAA /* Info.plist */,
+				84A3236D1ECA2DC400E22DAA /* DBWorker.swift */,
+				84A3236F1ECA2DDB00E22DAA /* DBWorkerDelegate.swift */,
+				84A323731ECA2FE400E22DAA /* AppConfig.swift */,
+				0F2B7D161F1875720052A035 /* speakerBios.json */,
+				0F2E3E4F1F5BA39B00B5B194 /* 2017-EvolutionBrochure.pdf */,
+			);
+			path = "MHEF-Conference";
+			sourceTree = "<group>";
+		};
+		84A323751ECA4D0600E22DAA /* Conference */ = {
+			isa = PBXGroup;
+			children = (
+				84A323761ECA4D1600E22DAA /* Conference.swift */,
+				84A323711ECA2F1900E22DAA /* ConferenceType.swift */,
+				84A323781ECA4D7D00E22DAA /* ConferenceTalk.swift */,
+				0F96BDAD1F0066CA004B7DE1 /* Speaker.swift */,
+				0F96BDAF1F006A79004B7DE1 /* TalkCategory.swift */,
+				0F2E3E5F1F5FB3E500B5B194 /* ConferenceRoom.swift */,
+			);
+			name = Conference;
+			sourceTree = "<group>";
+		};
+		CEE1BDF12F4813728E980FEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DD0B10754B4A2E15155AD92 /* Pods-MHEF-Conference.debug.xcconfig */,
+				1EAE59B7DE297FFDF9BF290F /* Pods-MHEF-Conference.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9BD0BD65A8FB11D95A100F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7185155C01B4F69FED3A3BDC /* Pods_MHEF_Conference.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A323561EC5269700E22DAA /* MHEF-Conference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A323691EC5269700E22DAA /* Build configuration list for PBXNativeTarget "MHEF-Conference" */;
+			buildPhases = (
+				113C3E55F6595B6176B8C295 /* [CP] Check Pods Manifest.lock */,
+				84A323531EC5269700E22DAA /* Sources */,
+				84A323541EC5269700E22DAA /* Frameworks */,
+				84A323551EC5269700E22DAA /* Resources */,
+				3548A614F3915A9508B0C655 /* [CP] Embed Pods Frameworks */,
+				2F793F9D97A2CCD7A1FB653D /* [CP] Copy Pods Resources */,
+				0F1DDE981F1463210092B186 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MHEF-Conference";
+			productName = "MHEF-Conference";
+			productReference = 84A323571EC5269700E22DAA /* MHEF-Conference.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A3234F1EC5269700E22DAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					84A323561EC5269700E22DAA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9K589KDG7Y;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 84A323521EC5269700E22DAA /* Build configuration list for PBXProject "MHEF-Conference" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A3234E1EC5269700E22DAA;
+			productRefGroup = 84A323581EC5269700E22DAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A323561EC5269700E22DAA /* MHEF-Conference */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A323551EC5269700E22DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2B7D171F1875720052A035 /* speakerBios.json in Resources */,
+				84A323651EC5269700E22DAA /* LaunchScreen.storyboard in Resources */,
+				84A323621EC5269700E22DAA /* Assets.xcassets in Resources */,
+				0F2E3E501F5BA39B00B5B194 /* 2017-EvolutionBrochure.pdf in Resources */,
+				84A323601EC5269700E22DAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F1DDE981F1463210092B186 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		113C3E55F6595B6176B8C295 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2F793F9D97A2CCD7A1FB653D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHEF-Conference/Pods-MHEF-Conference-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3548A614F3915A9508B0C655 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHEF-Conference/Pods-MHEF-Conference-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A323531EC5269700E22DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2B7D1B1F1AB9CC0052A035 /* PanelTableViewCell.swift in Sources */,
+				84A323701ECA2DDB00E22DAA /* DBWorkerDelegate.swift in Sources */,
+				0F7CA5ED1F246C6D001EEFBC /* CustomTabBarController.swift in Sources */,
+				84A323721ECA2F1900E22DAA /* ConferenceType.swift in Sources */,
+				0F2E3E5A1F5E01DC00B5B194 /* MHEFUserDefaults.swift in Sources */,
+				84A323791ECA4D7D00E22DAA /* ConferenceTalk.swift in Sources */,
+				84A323771ECA4D1600E22DAA /* Conference.swift in Sources */,
+				0FC830E51F5651B300E60A24 /* ServerErrorController.swift in Sources */,
+				0F1DDE951F1038410092B186 /* MenuController.swift in Sources */,
+				0FBF74921F0FF1E900824831 /* ViewAllSpeakersController.swift in Sources */,
+				0F2E3E581F5DF64F00B5B194 /* Favoritable.swift in Sources */,
+				0F96BDAE1F0066CA004B7DE1 /* Speaker.swift in Sources */,
+				0FC830E71F56627000E60A24 /* ImageButton.swift in Sources */,
+				0F2E3E561F5CE08C00B5B194 /* TabSwitcherDelegate.swift in Sources */,
+				0F2B7D211F1C18CC0052A035 /* ScheduleDayController.swift in Sources */,
+				0F7CA5EB1F243B9E001EEFBC /* TalkSpeakerTableCell.swift in Sources */,
+				0F1DDE971F132BA60092B186 /* MapController.swift in Sources */,
+				0F1DDE8B1F101C5A0092B186 /* SpeakerViewCell.swift in Sources */,
+				0F7CA5E91F231431001EEFBC /* ConferenceTalkTableCell.swift in Sources */,
+				84A323741ECA2FE400E22DAA /* AppConfig.swift in Sources */,
+				0F785AB01F5B61CF0050F2EB /* ParkingInfoViewController.swift in Sources */,
+				0F1DDE8D1F1021A30092B186 /* ViewSpeakerController.swift in Sources */,
+				0F96BDB51F09A000004B7DE1 /* RoundButton.swift in Sources */,
+				84A3236E1ECA2DC400E22DAA /* DBWorker.swift in Sources */,
+				0F2B7D191F1879310052A035 /* FileLoader.swift in Sources */,
+				84A3235B1EC5269700E22DAA /* AppDelegate.swift in Sources */,
+				0F2B7D1F1F1C13390052A035 /* ScheduleController.swift in Sources */,
+				0F1DDE9A1F146ABD0092B186 /* TwitterTimelineController.swift in Sources */,
+				0F2B7D651F1C57F90052A035 /* ViewTalkController.swift in Sources */,
+				0FAC0D631EFF380700D0B582 /* ConferenceController.swift in Sources */,
+				0FAC0D651EFF388700D0B582 /* StartUpController.swift in Sources */,
+				0F785AB21F5B679F0050F2EB /* FavoritesViewController.swift in Sources */,
+				0F96BDB71F09AD48004B7DE1 /* WebViewController.swift in Sources */,
+				0F96BDB31F0768F2004B7DE1 /* StringExt.swift in Sources */,
+				0F96BDB01F006A79004B7DE1 /* TalkCategory.swift in Sources */,
+				0F2B7D1D1F1ABE550052A035 /* AboutController.swift in Sources */,
+				0F2E3E601F5FB3E500B5B194 /* ConferenceRoom.swift in Sources */,
+				0F2E3E5E1F5FA57100B5B194 /* AppUtility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84A3235E1EC5269700E22DAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A3235F1EC5269700E22DAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A323631EC5269700E22DAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A323641EC5269700E22DAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A323671EC5269700E22DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84A323681EC5269700E22DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A3236A1EC5269700E22DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD0B10754B4A2E15155AD92 /* Pods-MHEF-Conference.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9K589KDG7Y;
+				INFOPLIST_FILE = "MHEF-Conference/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"Toast_Swift\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"TwitterKit\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"XLPagerTabStrip\"",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+					"-framework",
+					CFNetwork,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.erickson-foundation.MHEF-Conference";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MHEF-Conference/MHEF-Conference-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84A3236B1EC5269700E22DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EAE59B7DE297FFDF9BF290F /* Pods-MHEF-Conference.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9K589KDG7Y;
+				INFOPLIST_FILE = "MHEF-Conference/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.erickson-foundation.MHEF-Conference";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MHEF-Conference/MHEF-Conference-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A323521EC5269700E22DAA /* Build configuration list for PBXProject "MHEF-Conference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A323671EC5269700E22DAA /* Debug */,
+				84A323681EC5269700E22DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A323691EC5269700E22DAA /* Build configuration list for PBXNativeTarget "MHEF-Conference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3236A1EC5269700E22DAA /* Debug */,
+				84A3236B1EC5269700E22DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A3234F1EC5269700E22DAA /* Project object */;
+}

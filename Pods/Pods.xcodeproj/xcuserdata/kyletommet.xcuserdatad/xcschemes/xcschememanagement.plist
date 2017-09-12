@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-MHEF-Conference.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Toast-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XLPagerTabStrip-XLPagerTabStrip.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XLPagerTabStrip.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0C405AA0B939F95DB1D35D4FE391D4E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E852BAF24496BF14C726207E63477C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7FACF45CA7C34E0F5F6DDD27B429846B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F013522C78556FBECFBBC018136505B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBD1572FB2C3EC8C95093D25DD934A37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
