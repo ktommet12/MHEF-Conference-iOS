@@ -65,7 +65,7 @@ class ViewSpeakerController: UIViewController, UITableViewDelegate, UITableViewD
         
         let currentTalk = talksBySpeaker[indexPath.row]
         
-        cell.txtPanelTitle.text = currentTalk.getTitle()
+        cell.txtPanelTitle.text = currentTalk.getShortTitle()
         
         return cell
     }

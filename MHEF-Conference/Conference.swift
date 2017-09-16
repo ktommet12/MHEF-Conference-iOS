@@ -18,7 +18,7 @@ class Conference{
     private var _allSpeakers = [Speaker]()
     private var _favoritedTalks = [String]()
     
-    private var _roomDataSet: [ConferenceRoom]
+    //private var _roomDataSet: [ConferenceRoom]
     
     private var sharedPrefs = MHEFUserDefaults()
     
@@ -28,7 +28,7 @@ class Conference{
         
         speakerBios = FileLoader.loadJsonFile()
         
-        constructRoomDataSet()
+        //constructRoomDataSet()
         
         self._confName = (jsonContents["conference_full_name"] as? String)!
         self._aboutErickson = (jsonContents["about-erickson"] as? String)!
