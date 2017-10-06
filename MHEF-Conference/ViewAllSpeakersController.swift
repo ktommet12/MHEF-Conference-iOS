@@ -21,7 +21,7 @@ class ViewAllSpeakersController: UIViewController, UITableViewDelegate, UITableV
     
         speakerViewTable.delegate = self
         speakerViewTable.dataSource = self
-        speakerViewTable.estimatedRowHeight = 95.0
+        speakerViewTable.rowHeight = 95.0
         
         speakers = currentConference.getAllSpeakers()
     }
