@@ -9,5 +9,10 @@
 import Foundation
 
 struct ConferenceRoom{
-    let roomNum: String
+    let room: String, subRoom: String, fullRoomString: String
+    init(r: String, sr: String){
+        room = r
+        subRoom = sr
+        fullRoomString = room + " - " + subRoom
+    }
 }

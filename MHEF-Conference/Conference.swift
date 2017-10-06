@@ -17,8 +17,9 @@ class Conference{
     private var _dayTalks: [String: [ConferenceTalk]]
     private var _allSpeakers = [Speaker]()
     private var _favoritedTalks = [String]()
+    private var _roomKeys = [String]()
     
-    //private var _roomDataSet: [ConferenceRoom]
+    private var _roomDataSet = [String: [String]]()
     
     private var sharedPrefs = MHEFUserDefaults()
     
@@ -56,6 +57,19 @@ class Conference{
         let json = JSON(jsonContents)
         
         let days = json["days"]
+        let pic_strings = jsonContents["pic_strings"] as! [String]
+        
+        let temp_rooms = json["map_data_set"]
+    
+        for temp in temp_rooms{
+            var room = temp.0
+            var roomArr:[String] = temp.1.arrayValue.map{$0.stringValue}
+            for tempRoom in pic_strings{
+                if tempRoom == room{
+                 self._roomDataSet[room] = roomArr
+                }
+            }
+        }
         
         
         self._dayTalks = [String: [ConferenceTalk]]()
@@ -74,7 +88,19 @@ class Conference{
                 let shortTitle = talk.1["short_title"].string
                 let speakersFullNames = talk.1["speaker_name"].string
                 let speakerNamesOnly = talk.1["speaker_name_only"].string
-                let talkRoom = talk.1["room"].string
+                
+                let tempRoom = talk.1["room"].string
+                let roomArr = tempRoom?.components(separatedBy: " - ")
+                var talkRoom:ConferenceRoom!
+                if roomArr?.count != 1{
+                    self.addRoomKey(str: roomArr![0])
+                    talkRoom = ConferenceRoom(r: roomArr![0], sr: roomArr![1])
+                }
+                else{
+                    talkRoom = ConferenceRoom(r: "TBD", sr: "TBD")
+                }
+                
+                
                 let talkCategory = self.convertToTalkCategory(talk.1["talk_category"].string!)
                 
                 let fullNameArr = speakersFullNames?.components(separatedBy: ";")
@@ -104,17 +130,28 @@ class Conference{
                     }
                 }
                 
-                let tempTalk = ConferenceTalk(title: title!,shortTitle: shortTitle!, time: timeSlot!, room: talkRoom!, description: description!, speakers: speakers, day: date, talkCat: talkCategory)
+                let tempTalk = ConferenceTalk(title: title!,shortTitle: shortTitle!, time: timeSlot!, room: talkRoom, description: description!, speakers: speakers, day: date, talkCat: talkCategory)
                 
                 tempTalk.setFullNameString(speakersFullNames!)
                 tempTalk.setShortNameString(speakerNamesOnly!)
-                
+
                 dayTalks.append(tempTalk)
             }
             self._dayTalks[date] = dayTalks
         }
         self.setFavoritesFromPrefs()
         
+    }
+    private func addRoomKey(str: String){
+        var alreadyInList = false
+        for key in self._roomKeys{
+            if key == str{
+                alreadyInList = true;
+            }
+        }
+        if !alreadyInList{
+            self._roomKeys.append(str)
+        }
     }
     func getConferenceDates()->[String]{
         return self._dates
@@ -130,6 +167,15 @@ class Conference{
     }
     func getAllTalks(byFilters filter: [TalkCategory])->[ConferenceTalk]{
         return [ConferenceTalk]()
+    }
+    func getRoomKeys()->[String]{
+//        let keys = self._roomDataSet.keys
+//        var returnKeys = [String]()
+//        for key in keys{
+//            returnKeys.append(key)
+//        }
+//        return returnKeys
+        return self._roomKeys
     }
     func toggleFavorite(title: String, date: String){
         let dayTalks = self._dayTalks[date]

@@ -10,13 +10,14 @@ import Foundation
 
 class ConferenceTalk{
     private var _title: String,_shortTitle: String, _timeSlot: String, _description: String, _day: String;
-    private var _shortNameString: String, _fullNameString: String, _room: String;
+    private var _shortNameString: String, _fullNameString: String
     private var _speakers: [Speaker]
     private var _talkCategory: TalkCategory
     private var _isTalkFavorited: Bool
     private var _id: Int;
+    private var _room: ConferenceRoom
     
-    init(title: String,shortTitle: String, time: String, room: String, description: String, speakers: [Speaker], day: String, talkCat: TalkCategory){
+    init(title: String,shortTitle: String, time: String, room: ConferenceRoom, description: String, speakers: [Speaker], day: String, talkCat: TalkCategory){
         self._title = title;
         self._shortTitle = shortTitle;
         self._description = description;
@@ -42,7 +43,7 @@ class ConferenceTalk{
     func getTalkId()->Int{
         return self._id;
     }
-    func getTalkRoom()->String{
+    func getTalkRoom()->ConferenceRoom{
         return self._room;
     }
     func getTalkDay()->String{
