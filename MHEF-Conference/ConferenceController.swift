@@ -50,6 +50,11 @@ class ConferenceController: UIViewController {
         let tapAboutBtn = UITapGestureRecognizer(target: self, action: #selector(self.goToAbout))
         self.aboutViewBtn.addGestureRecognizer(tapAboutBtn)
         
+        let tapTwitterBtn = UITapGestureRecognizer(target: self, action: #selector(self.goToTwitter))
+        self.twitterViewBtn.addGestureRecognizer(tapTwitterBtn)
+        
+        let tapMapsBtn = UITapGestureRecognizer(target: self, action: #selector(self.goToMaps))
+        self.mapsViewBtn.addGestureRecognizer(tapMapsBtn)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -80,6 +85,10 @@ class ConferenceController: UIViewController {
         else if segue.identifier == "goToAbout"{
             let vc = segue.destination as! AboutController
             vc.currentConference = currentConference
+        }
+        else if segue.identifier == "goToMapsList"{
+            let vc = segue.destination as! MapListTableViewController
+            vc.mapItems = currentConference.getRoomKeys()
         }
     }
     @IBAction func unwindToLandingSegue(segue:UIStoryboardSegue) {
@@ -113,7 +122,12 @@ class ConferenceController: UIViewController {
     func goToMainWebsite(){
         performSegue(withIdentifier: "goToMainWebsite", sender: self)
     }
-    
+    func goToTwitter(){
+        performSegue(withIdentifier: "goToTwitter", sender: self)
+    }
+    func goToMaps(){
+        performSegue(withIdentifier: "goToMapsList", sender: self)
+    }
     override func viewWillDisappear(_ animated: Bool) {
         //AppUtility.lockOrientation(.portrait)
     }
