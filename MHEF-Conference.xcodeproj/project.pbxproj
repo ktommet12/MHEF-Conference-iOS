@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F085FD21F872EE200EFCD5C /* MapListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F085FD11F872EE200EFCD5C /* MapListTableViewController.swift */; };
+		0F085FD41F87315800EFCD5C /* MapListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F085FD31F87315800EFCD5C /* MapListTableCell.swift */; };
 		0F1DDE8B1F101C5A0092B186 /* SpeakerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1DDE8A1F101C5A0092B186 /* SpeakerViewCell.swift */; };
 		0F1DDE8D1F1021A30092B186 /* ViewSpeakerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1DDE8C1F1021A30092B186 /* ViewSpeakerController.swift */; };
 		0F1DDE951F1038410092B186 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1DDE941F1038410092B186 /* MenuController.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F085FD11F872EE200EFCD5C /* MapListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListTableViewController.swift; sourceTree = "<group>"; };
+		0F085FD31F87315800EFCD5C /* MapListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListTableCell.swift; sourceTree = "<group>"; };
 		0F1DDE8A1F101C5A0092B186 /* SpeakerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewCell.swift; sourceTree = "<group>"; };
 		0F1DDE8C1F1021A30092B186 /* ViewSpeakerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSpeakerController.swift; sourceTree = "<group>"; };
 		0F1DDE8E1F1029D60092B186 /* MHEF-Conference-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHEF-Conference-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 				0F2E3E571F5DF64F00B5B194 /* Favoritable.swift */,
 				0F2E3E591F5E01DC00B5B194 /* MHEFUserDefaults.swift */,
 				0F2E3E5D1F5FA57100B5B194 /* AppUtility.swift */,
+				0F085FD31F87315800EFCD5C /* MapListTableCell.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				0FC830E41F5651B300E60A24 /* ServerErrorController.swift */,
 				0F785AAF1F5B61CF0050F2EB /* ParkingInfoViewController.swift */,
 				0F785AB11F5B679F0050F2EB /* FavoritesViewController.swift */,
+				0F085FD11F872EE200EFCD5C /* MapListTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 				0F2E3E581F5DF64F00B5B194 /* Favoritable.swift in Sources */,
 				0F96BDAE1F0066CA004B7DE1 /* Speaker.swift in Sources */,
 				0FC830E71F56627000E60A24 /* ImageButton.swift in Sources */,
+				0F085FD21F872EE200EFCD5C /* MapListTableViewController.swift in Sources */,
 				0F2E3E561F5CE08C00B5B194 /* TabSwitcherDelegate.swift in Sources */,
 				0F2B7D211F1C18CC0052A035 /* ScheduleDayController.swift in Sources */,
 				0F7CA5EB1F243B9E001EEFBC /* TalkSpeakerTableCell.swift in Sources */,
@@ -395,6 +402,7 @@
 				84A3236E1ECA2DC400E22DAA /* DBWorker.swift in Sources */,
 				0F2B7D191F1879310052A035 /* FileLoader.swift in Sources */,
 				84A3235B1EC5269700E22DAA /* AppDelegate.swift in Sources */,
+				0F085FD41F87315800EFCD5C /* MapListTableCell.swift in Sources */,
 				0F2B7D1F1F1C13390052A035 /* ScheduleController.swift in Sources */,
 				0F1DDE9A1F146ABD0092B186 /* TwitterTimelineController.swift in Sources */,
 				0F2B7D651F1C57F90052A035 /* ViewTalkController.swift in Sources */,
@@ -573,10 +581,6 @@
 					"\"UIKit\"",
 					"-framework",
 					"\"XLPagerTabStrip\"",
-					"-force_load",
-					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
-					"-framework",
-					CFNetwork,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.erickson-foundation.MHEF-Conference";
 				PRODUCT_NAME = "$(TARGET_NAME)";
