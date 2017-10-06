@@ -50,7 +50,7 @@ class DBWorker{
                     let jsonResponse = jsonObject as? [String: Any]
                     self.delegate?.didFinishTask(returnedJSON: jsonResponse, wasASuccess: true)
                 }catch let error{
-                    print("Error Parsing Input Data from Server")
+                    print("Error Parsing Input Data from Server: \(error.localizedDescription)")
                     self.delegate?.didFinishTask(returnedJSON: nil, wasASuccess: false)
                 }
             }else if let requestError = error{

@@ -29,8 +29,7 @@ class ScheduleDayController: UIViewController, IndicatorInfoProvider, UITableVie
         
         tableDayTalks.delegate = self
         tableDayTalks.dataSource = self
-        tableDayTalks.estimatedRowHeight = 170.0
-        tableDayTalks.rowHeight = UITableViewAutomaticDimension
+        tableDayTalks.estimatedRowHeight = 250.0
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return currentDayTalks.count
@@ -56,7 +55,7 @@ class ScheduleDayController: UIViewController, IndicatorInfoProvider, UITableVie
         
         cell.txtTalkTitle.text = currentTalk.getTitle()
         cell.txtTimeSlot.text = currentTalk.getTimeSlot()
-        cell.txtTalkRoom.text = currentTalk.getTalkRoom()
+        cell.txtTalkRoom.text = currentTalk.getTalkRoom().fullRoomString
         
         cell.talk = currentTalk
         

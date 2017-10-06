@@ -64,7 +64,7 @@ class ScheduleController: ButtonBarPagerTabStripViewController  {
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if let test = sender as? UIButton{
-            if test.accessibilityLabel! == "goHome"{
+            if test.accessibilityLabel == "goHome"{
                 return true
             }
         }

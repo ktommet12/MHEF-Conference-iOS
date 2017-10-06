@@ -14,12 +14,14 @@ class TwitterTimelineController: TWTRTimelineViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.dataSource = TWTRUserTimelineDataSource(screenName: "ericksonfound", apiClient: TWTRAPIClient())
+        let client = TWTRAPIClient();
+        self.dataSource = TWTRUserTimelineDataSource(screenName: "ericksonFound", apiClient: TWTRAPIClient())
         
         
         
         
-        //self.dataSource = TWTRListTimelineDataSource(listSlug: "surfing", listOwnerScreenName: "ericksonfound", apiClient: TWTRAPIClient())
+        
+        //self.dataSource = TWTRListTimelineDataSource(listSlug: "surfing", listOwnerScreenName: "ericksonfound", apiClient: client)
 
     
     }
